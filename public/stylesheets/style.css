@@ -1,8 +1,39 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font: 14px  "monospace", Helvetica, Arial, sans-serif;
+  background-color: #052830;
 }
+.navbar-dark {
+  background-color: #03191e !important;
+  }
 
-a {
-  color: #00B7FF;
+.navbar-brand, .fas{
+  color: #a8a8a8 !important;
+  font-weight: 600;
+  outline: none;
+
+}
+.navbar-brand:hover, .fas:hover{
+  color: #cfcfcf !important;
+}
+.navbar {
+  -webkit-box-shadow: 0 4px 6px 1px #06171b;
+  -moz-box-shadow: 0 4px 6px 1px #06171b;
+  box-shadow: 0 4px 6px 1px #06171b;
+}
+textarea{
+  padding-top: 1rem;
+  border: transparent;
+  background: transparent;
+  color: antiquewhite;
+  width:100%;
+  height:91vh;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  justify-content: space-around;
+
 }
