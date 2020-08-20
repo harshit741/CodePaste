@@ -25,7 +25,7 @@ body {
   box-shadow: 0 4px 6px 1px #06171b;
 }
 textarea{
-  padding-top: 1rem;
+  padding: 1rem;
   border: transparent;
   background: transparent;
   color: antiquewhite;
@@ -35,5 +35,60 @@ textarea{
   font-size: 16px;
   font-family: 'Space Mono', monospace;
   justify-content: space-around;
-
 }
+textarea::placeholder{
+  opacity: 0.2;
+}
+.save-modal {
+  background-color: #052830;
+  color: #cfcfcf;
+}
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+.save-modal-button {
+  outline: none;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: #ff4081;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.save-modal-button:hover {
+  background-color: #38474B;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ff4081;
+  transition: 0.3s ease-in-out;
+}
+.save-modal-button:focus{
+  outline: none;
+}
+.modal input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #03191e;
+  font-size: 1.2rem;
+  color: antiquewhite;
+ }
+ .modal input::placeholder {
+   opacity: 0.1;
+ }
+ .modal .close {
+   font-size: 2em;
+   text-shadow: none;
+   color:  #021013;
+   outline: none;
+ }
+ .hidden {
+   display: none;
+ }
