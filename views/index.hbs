@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">&lt/&gt CodePaste</a>
-  <a class="navbar-nav ml-auto" data-toggle="modal" data-target="#exampleModalCenter">
+  <a class="navbar-nav ml-auto" data-toggle="modal" data-target="#save-file-modal">
     <i class="fas fa-save fa-2x"></i>
   </a>
   &nbsp &nbsp
@@ -8,9 +8,9 @@
     <i class="fas fa-user fa-2x"></i>
   </a>
 </nav>
-<form action="/" method="POST" spellcheck="false" target="uploader_iframe" id="snippet">
+<form spellcheck="false" id="snippet">
   <textarea name="code" placeholder="Your code here..." id="code-area"></textarea>
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <div class="modal fade" id="save-file-modal" tabindex="-1" role="dialog" aria-labelledby="save-file-modal"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content save-modal">
@@ -31,4 +31,3 @@
     </div>
   </div>
 </form>
-<iframe id="uploader_iframe" name="uploader_iframe" style="display: none;"></iframe>

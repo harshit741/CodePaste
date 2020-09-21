@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 const SnippetSchema = new mongoose.Schema({
     snippetName: {
         type: String,
-        trim: true
+        trim: true,
+        required: true,
+        unique: true
     },
     code: {
         type: String,
