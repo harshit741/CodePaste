@@ -61,3 +61,13 @@ $(document).ready(function () {
 function resetForms() {
   document.getElementById('snippet').reset();
 }
+
+//CodeMirror
+  $(document).ready(() => {
+    var code = $('textarea')[0];
+    var edtior = CodeMirror.fromTextArea(code, {
+      lineNumbers: true,
+      mode: 'javascript',
+      theme: 'my-theme',
+    })
+  })
