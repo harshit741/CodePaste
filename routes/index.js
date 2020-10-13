@@ -23,6 +23,7 @@ router.get('/', function(req, res, next) {
     if (err.name === 'MongoError' && err.code === 11000) {
       msg = 'Snippet Name Already Exists.'
     } else if (err.name === 'ValidationError'){
+      console.log(err)
       msg = 'Snippet Code or Snippet Name cannot be left blank.'
     } else {
       msg = "Some error in server."
