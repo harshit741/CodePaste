@@ -47,7 +47,7 @@ function resetForms() {
             //Success
             const copyText = document.getElementById("snippetName").value;
             $("#copy-button").removeClass("hidden");
-            $("#snippetName").val("url/" + copyText);
+            $("#snippetName").val("localhost:3000/" + copyText);
             $("#save-button").text("Saved");
             $("#saving-snippet").text("Snippet Saved!");
             $("#save-button").attr('disabled', 'disabled');
