@@ -35,15 +35,22 @@ router.get('/', (req, res, next) => {
     })
   })
 }).get('/:snippetName', (req, res) => {
-  var snippteName = req.params.snippetName;
-  Snippet.findOne({snippetName: snippteName}).then(result => {
-    console.log(result)
-    res.render('index', {
-      code: result.code,
-      layout: 'main'
-    })
-  }).catch(err => {
-    console.log(err)
+  var snippetName = req.params.snippetName;
+  Snippet.findOne({snippetName: snippetName}).then(result => {
+    if(result!==null){
+      console.log(result.code)
+      res.render('index', {
+        code: result.code,
+        layout: 'main'
+      })
+    }
+    else {
+      res.StatusCode = 404,
+      res.render('index', {
+        layout: 'main',
+        code: 'Error: 404, No such files!'
+      })
+    }
   })
 })
 module.exports = router;

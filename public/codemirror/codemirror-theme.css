@@ -6,7 +6,7 @@
 .cm-s-my-theme .CodeMirror-gutters { background: #052830; border-right: 0px; }
 .cm-s-my-theme .CodeMirror-guttermarker { color: white; }
 .cm-s-my-theme .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
-.cm-s-my-theme .CodeMirror-linenumber { color: #d0d0d0; }
+.cm-s-my-theme .CodeMirror-linenumber { color: #575757; }
 .cm-s-my-theme .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
 
 .cm-s-my-theme span.cm-comment { color: #75715e; }
@@ -23,8 +23,8 @@
 .cm-s-my-theme span.cm-builtin { color: #66d9ef; }
 .cm-s-my-theme span.cm-string { color: #e6db74; }
 
-.cm-s-my-theme span.cm-variable { color: #f8f8f2; }
-.cm-s-my-theme span.cm-variable-2 { color: #9effff; }
+.cm-s-my-theme span.cm-variable { color: #CDFAF0; }
+.cm-s-my-theme span.cm-variable-2 { color: #40B6E7; }
 .cm-s-my-theme span.cm-variable-3, .cm-s-my-theme span.cm-type { color: #66d9ef; }
 .cm-s-my-theme span.cm-def { color: #fd971f; }
 .cm-s-my-theme span.cm-bracket { color: #f8f8f2; }
