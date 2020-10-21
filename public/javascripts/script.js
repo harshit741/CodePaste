@@ -42,7 +42,7 @@ $(document).ready(() => {
           //Success
           const copyText = document.getElementById("snippetName").value;
           $("#copy-button").removeClass("hidden");
-          $("#snippetName").val("localhost:3000/" + copyText);
+          $("#snippetName").val("https://codepastee.herokuapp.com/" + copyText);
           $("#save-button").text("Saved");
           $("#saving-snippet").text("Snippet Saved!");
           $("#save-button").attr('disabled', 'disabled');
